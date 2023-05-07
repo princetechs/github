@@ -2,6 +2,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog } from "@headlessui/react";
 import { useState } from "react";
 import Profile from "../profile";
+import Image from 'next/image'
 
 type NavigationItem = {
   name: string;
@@ -66,11 +67,15 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
+
+
+              {/* <Image
+                src="https://example.com/hero.jpg"
+                alt="Landscape picture"
+                width={800}
+                height={500}
+              /> */}
+              
             </a>
             <button
               type="button"
@@ -98,7 +103,7 @@ export default function Navbar() {
                 <button
                   type="button"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  onClick={() => signIn()}
+                  }
                 >
                   Sign In
                 </button>
