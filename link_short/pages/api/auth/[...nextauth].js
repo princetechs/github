@@ -3,7 +3,7 @@ import { PrismaAdapter } from "@next-auth/prisma-adapter"
 import { PrismaClient } from "@prisma/client"
 import EmailProvider from "next-auth/providers/email";
 import GitHubProvider from "next-auth/providers/github";
-
+// prisma client creation 
 const prisma = new PrismaClient()
  
 export const authOptions=({
