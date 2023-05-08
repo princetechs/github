@@ -19,7 +19,7 @@ const Header = () => {
         </div>
 
         <div className="mx-auto max-w-sm py-32 sm:py-48 lg:py-56">
-          <Linkfield fieldname={{ placeholder: "Past Link", label: "Short" }} />
+          <Linkfield fieldname={{ placeholder: "Paste Link", label: "Short" }} />
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               Links for everyone
